@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
 import pandas as pd
-
+from typing import Literal
 model = joblib.load("diabetes_model.pkl")
 training_columns = joblib.load("training_columns.pkl")
 
@@ -19,8 +19,7 @@ class PatientData(BaseModel):
     ldl: float
     vldl: float
     bmi: float
-    gender: str
-
+    gender: Literal ["M", "F"]
 @app.get("/")
 def home():
     return {"status": "API is running"}
@@ -45,6 +44,6 @@ def predict(data: PatientData):
 
     # Step 6: return result
     return {
-        "prediction": int(prediction[0])
+        "prediction": prediction[0]
     }
 #Now move on to the next step
