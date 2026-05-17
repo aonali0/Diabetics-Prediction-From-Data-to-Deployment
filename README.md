@@ -1,11 +1,11 @@
-# MLOps SP26 Assignment 1: Diabetes Prediction 🩺
+# MLOps SP26 Assignment 1: Diabetes Prediction 
 
 ## Project Description
 This project is an end-to-end Machine Learning Pipeline developed as part of the MLOps SP26 Assignment at Quaid-i-Azam University. It covers everything from data preprocessing and exploratory data analysis (EDA) to model training, evaluation, and finally deploying the best-performing model as a RESTful API using FastAPI. The goal is to accurately predict the likelihood of diabetes in patients based on their medical diagnostic measurements.
 
-**Author:** Syed Aon Ali Shah
+Author: Syed Aon Ali Shah
 
-## 🛠️ Setup Instructions
+ Setup Instructions
 
 Follow these steps to set up the project locally:
 
@@ -25,17 +25,13 @@ source venv/bin/activate
 3. Install Dependencies:
 pip install -r requirements.txt
 
-🚀 How to Run the FastAPI Server
+How to Run the FastAPI Server
 Once the dependencies are installed and the virtual environment is active, start the FastAPI server by running:
 uvicorn app:app --reload
 
 The API will be available at http://localhost:8000. You can also view the interactive automatic API documentation (Swagger UI) at http://localhost:8000/docs.
 
-📊 Model Performance Comparison
-Here is the performance comparison of the different classification models evaluated during the training phase on the test dataset (30% split):
-
-## 📊 Model Performance Comparison
-
+Model Performance Comparison
 Here is the performance comparison of the different classification models evaluated during the training phase on the test dataset (30% split):
 
 | Model                      | Accuracy | Precision | Recall   | F1-Score |
@@ -64,8 +60,7 @@ curl -X POST "http://localhost:8000/predict" -H "Content-Type: application/json"
 Test 4 - Missing field error:
 curl -X POST "http://localhost:8000/predict" -H "Content-Type: application/json" -d "{\"age\": 50, \"urea\": 5.0, \"cr\": 50.0}"
 
-
-📸 Screenshots of API Responses
+Screenshots of API Responses
 Screenshots demonstrating the API responses for the above cURL commands have been saved in the screenshots/ directory of this repository.
 <img width="745" height="213" alt="Test 1" src="https://github.com/user-attachments/assets/f868c400-b5dd-4ed5-bf81-189aeae4204a" />
 <img width="731" height="53" alt="Test 2" src="https://github.com/user-attachments/assets/92bf1016-684a-4010-908c-9209a38c92fa" />
