@@ -67,5 +67,9 @@ curl -X POST "http://localhost:8000/predict" -H "Content-Type: application/json"
 
 📸 Screenshots of API Responses
 Screenshots demonstrating the API responses for the above cURL commands have been saved in the screenshots/ directory of this repository.
+<img width="745" height="213" alt="Test 1" src="https://github.com/user-attachments/assets/f868c400-b5dd-4ed5-bf81-189aeae4204a" />
+<img width="731" height="53" alt="Test 2" src="https://github.com/user-attachments/assets/92bf1016-684a-4010-908c-9209a38c92fa" />
+<img width="793" height="218" alt="Test 3" src="https://github.com/user-attachments/assets/7966e09e-7451-465e-a13e-ca04b0d2ed89" />
+<img width="749" height="65" alt="Test 3 Literal Error" src="https://github.com/user-attachments/assets/5babefd4-e94d-43cc-acda-8660851c0f9a" />
+<img width="754" height="128" alt="Test 4" src="https://github.com/user-attachments/assets/1283bab0-78c6-48fc-b018-d4383aaa563a" />
 
-![alt text](<Test 1.png>) ![alt text](<Test 2.png>) ![alt text](<Test 3 Literal Error.png>) ![alt text](<Test 3.png>) ![alt text](<Test 4.png>)
